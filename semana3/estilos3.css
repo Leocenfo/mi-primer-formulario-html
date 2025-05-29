@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*--estilos a la seccion*/
+
+main {
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    /*acomodar los elementos de forma vertical*/
+    justify-content: center;
+    /*acomodar los elementos de forma horizontal*/
+}
+
+#formularios {
+    border: 1px solid rebeccapurple;
+    width: 50%;
+    height: auto;
+}
+
+/*aqui modificamos el titulo */
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+
+}
+
+/*aqui vamos a modificar todas las etiquetas o los labels*/
+
+label {
+    display: block;
+    /*aqui agregamos todas la lineas en bloque */
+    margin: 10px 0px 5px 0 px;
+    /*aqui le damos el margen a los bloques  arr 10 , der 0 , abaj 5 , izq 0 */
+}
+
+input , select,area{
+    width: 95%;
+    padding: 5px;
+    border: 1px solid #9b9a9a;
+    border-radius: 5px;
+}
+
+textarea{
+    resize: none; /*aqui le quitamos al cuadro de comentarios el poder agrandarlo */
+    
+}

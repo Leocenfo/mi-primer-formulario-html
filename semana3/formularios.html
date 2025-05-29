@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title> <!--titulo de la pagina -->
+    <link rel="stylesheet" href="/semana3/estilos3.css">
+    <!--nunca olvidar esta linea aqui incorporamos el css estilos-->
+</head>
+
+<body>
+
+    <main>
+        <section id="formularios"> <!--secction es para empezar a crear el formulario-->
+            <h1>formaulario de registro </h1> <!--aqui se muestra que es un formulario de registro-->
+
+            <form id="FormRegistro"> <!--aqui se crea el formulario de registro-->
+                <label for="txtNombre">Nombre:</label> <!--etiqueta para introduccir el nombre -->
+                <input type="text" id="txtNombre" placeholder="Leonardo...">
+                <!--con esta etiqueta el usuario tiene que digitar un texto-->
+
+                <label for="txtApellido">apellido:</label>
+                <!--Recordemos esta es la etiqueta pra introducir el apellido-->
+                <input type="text" id="txtApellido" placeholder="Quesada...">
+                <!--el placeholder muestra como posiblemente se vea lo que el usuario tiene que digitar-->
+
+                <label for="txtEdad">Edad</label> <!--etiqueta para introducir edad -->
+                <input type="Number" id="txtEdad" min="0" max="100" placeholder="25...">
+                <!--aqui agregamos el input para que usuario digite la edad -->
+
+                <label for="txtContraseña">Contraseña:</label> <!--aqui se crea la etiqueta de contraseña-->
+                <input type="password" id="txtContraseña"> <!--aqui pedimos al usuario introducir la contraseña-->
+
+                <label for="txtCorreo">Correo</label> <!--aqui creamos la etiqueta de correo-->
+                <input type="email" id="txtCorreo" placeholder="lquesada@hotmail.com...">
+                <!--aqui hacemos el input donde el usuario introducce su correo-->
+
+                <label for="">Fecha De Ncimiento</label>
+                <!-- etiqueta de fecha nacimiento datetime es para que tenga fecha y hora local -->
+                <input type="datetime-local" id="fechaNcimiento"> <!-- input donde el usuario agrega la info-->
+
+                <label for="txtIdentificacion"> Identificacion</label> <!-- etiqueta de identificacion-->
+                <input type="text" id="txtIdentificacion" placeholder=" 1-0667-0501">
+                <!-- input donde el usuario digita su identificacion-->
+
+                <label for="">Tipo de identificacion:</label>
+                <!--aqui creamos el tipo de identificacion que queremos si es nacional o extragero-->
+                <div id="radio-gropu"> <!--div o caja donde creamos cada tipo de identificacion-->
+                    <!-- este es para nacionales-->
+                    <input type="radio" id="rdNcionacional" name="identificacion" value="Nacional">
+                    <label for="rdNcionacional">Nacional</label>
+                    <!--y este es para extragenros-->
+                    <input type="radio" id="rdDimex" name="identificacion" value="Dimex">
+                    <label for="rdDimex">Dimex</label>
+                </div>
+
+                <label for="pais">pais</label> <!--label o etiqueta para el pais-->
+                <select name="pais" id="pais"> <!--tulizamos una etiqueta "select" parar seleccionar el pais-->
+                    <option value="mexico">Mexico</option> <!--estas serias las opciones del select-->
+                    <option value="costa_rica">Costa Rica</option> <!--estas serias las opciones del select-->
+                    <option value="salvador"> Salvador</option> <!--estas serias las opciones del select-->
+                    <option value="argentina">Argentina</option> <!--estas serias las opciones del select-->
+                </select>
+
+                <label for="intereses">Intereses</label>
+                <!--label o etiqueta de los intereses o cosas que le gustan al usuario-->
+                <div id="checkbox-group"> <!--div o caja donde tendremos los diferentes tipos de intereses-->
+                    <input type="checkbox" id="deporte" name="intereses" value="deporte">
+                    <label for="deporte">Deporte </label>
+
+                    <input type="checkbox" id="musica" name="intereses" value="musica">
+                    <label for="deporte">Deporte </label>
+
+                    <input type="checkbox" id="cine" name="intereses" value="cine">
+                    <label for="cine">Cine</label>
+
+                </div>
+                <!--etiqueta para que el usuario agregue sus comentarios-->
+                <label for="txtComentarios">Comentarios</label>
+                <textarea id="Comentarios" rows="10" cols="50"></textarea>
+
+                <!--este seria el boton para enviar una vez completada la seccion de llenar el formulario-->
+                <button id="btnEnviar" type="button">Enviar</button>
+
+            </form>
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
