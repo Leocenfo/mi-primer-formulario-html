@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formTarjetas</title>
+    <link rel="stylesheet" href="/semana3/practicaFormulario/Estilo.css">
+</head>
+<body>
+
+<div class="container"> 
+
+<h1>Ingresar Datos de Tarjeta de Crédito</h1> <!--titular de la pagina web-->
+
+
+<form action="numero" method="post">
+
+    <label for="nombre">Nombre del Titular:</label> <!--aqui hacemos el primer label en este caso nombre del titular -->
+
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" required> <!--aqui el input de lo que digita el usuario-->
+
+    <label for="numero_tarjeta">Número de Tarjeta:</label>  <!--label o titular de la tarjeta -->
+
+    <input type="tel" id="numero_tarjeta" name="numero_tarjeta" placeholder="16 Dígitos" required> <!--input del usuario y en el placehold que son 16 digitos -->
+
+    <label for="fecha_vencimiento">Fecha de Vencimiento:</label> <!--label o titular de la fecha de vencimiento-->
+
+    <input type="datetime-local" id="fecha_vencimiento" name="fecha_vencimiento" > <!--input de fecha de vencimineto del usuario-->
+
+    <label for="cvv">CVV:</label> <!--aqui se hace el titula de cvv-->
+
+    <input type="tel" id="cvv" name="cvv" placeholder="3 Dígitos"> <!--aqui el input del cvv y placeholder que son 3 digitos-->
+
+    <!--acontinuacion tenemos el contenedor de los tipos de tarjeta-->
+    <div class="radio-group">
+        <label for="tipo_tarjeta">Tipo de Tarjeta:</label>
+        <label><input type="radio" name="tipo_tarjeta" value="visa"> Visa</label>
+        <label><input type="radio" name="tipo_tarjeta" value="mastercard"> Mastercard</label>
+        <label><input type="radio" name="tipo_tarjeta" value="amex"> American Express</label>
+    </div>
+<!--aqui tenemos los titulares del pais la casilla de seleccion y en option los paises de centroamerica -->
+    <label for="pais">País:</label>
+    <select id="pais" name="pais" required>
+        <option value="" disabled selected>Seleccione un país</option>
+        <option value="costarica">Costa Rica</option>
+        <option value="el_salvador">El Salvador</option>
+        <option value="guatemala">Guatemala</option>
+        <option value="honduras">Honduras</option>
+        <option value="nicaragua">Nicaragua</option>
+        <option value="panama">Panamá</option>
+    </select>
+<!--como pie de la pagina tenemos el boton que en este caso seria procesar el pago -->
+    <button type="submit">Procesar Pago</button>
+</body>
+</html>
